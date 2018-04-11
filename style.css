@@ -1,5 +1,7 @@
-.header{
+body{
     overflow: hidden;
+}
+.header{
     margin: 0;
     background-color: #282e3f;
     display: flex;
@@ -26,6 +28,7 @@
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: -20px;
 }
 
 .header li:first-child:hover a{
@@ -35,8 +38,14 @@
     visibility: visible;
 }
 .subMenu li{
+    width: 100%;
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.subMenu li:hover{
+    background-color: #3da185;
+    transition: 0.2s;
 }
 .header a{
     color: white;
@@ -45,4 +54,18 @@
 
 .subMenu li a{
     color: white !important;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0px;
+    position: absolute;
+}
+.footer a:last-child{
+    text-align: right;
 }
